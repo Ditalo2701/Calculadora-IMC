@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="imc.css">
+   
+</head>
+<body>
+
+    <h1>IMC Calculator</h1>
+
+ <div class="imc">
+         <form action="">
+             <fieldset>
+                 <legend>Calculadora</legend>
+
+                 <label for="peso">Informe seu Peso:</label>
+                 <input type="number" name="peso" id="peso" class='quebra'>
+
+                 <label for="altura">Informe sua Altura:</label>
+                 <input type="number" name="altura" id="altura">
+             
+                 <button id="btn_calc" type="submit" >Enviar</button>
+                 <p><span id="resultado">Resultado</span></p>
+             
+                 <input type="reset" value="Limpar" id="limpar">
+                     </fieldset>
+         </form>
+ </div>
+
+    <script>
+
+        var altura = document.querySelector('#altura') 
+        var peso =  document.querySelector('#peso');
+        var btn = document.querySelector('#btn_calc');
+        var resultado = document.querySelector('#resultado')
+        var limpar = document.querySelector('#limpar')
+
+        btn.addEventListener('click',par)
+
+      function par(){
+ 
+        alt = Number(altura.value)
+        ps = Number(peso.value)
+
+        r = ps / (alt * alt);
+
+        resultado.innerHTML = r
+                
+       }     
+    </script>
+</body>
+</html>

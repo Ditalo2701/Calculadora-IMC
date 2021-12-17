@@ -1,0 +1,42 @@
+
+
+:root{
+    --clr-background:#000;
+    --clr-text-:#fff;
+
+}
+
+body{
+    background-color: var(--clr-background);
+    color: var(--clr-text-);
+}
+
+.imc{
+    width: 600px;
+    margin: 50px auto;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 5px black;
+    border: 1px solid white;   
+}
+
+h1{
+    text-align: center;
+}
+
+.quebra{
+    display: block;
+}
+
+input{
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+label{
+    display: block;
+}
+
+button:hover{
+ opacity: 0.8;
+}
